@@ -1,0 +1,183 @@
+/* RELATÓRIO SPECIFIC STYLES */
+.relatorio-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 100%);
+  padding: 2rem;
+}
+
+.relatorio-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.relatorio-header h1 {
+  color: #ccc;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-btn {
+  display: inline-block;
+  background: #d72638;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.home-btn:hover {
+  background: #a51b2a;
+}
+
+.table-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  background: rgba(215, 38, 56, 0.2);
+  color: #ccc;
+  font-weight: bold;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.view-btn {
+  background: #d72638;
+  color: #ccc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-btn:hover {
+  background: #a51b2a;
+}
+
+/* MODAL STYLES */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #2d1b1b 0%, #1a1a1a 100%);
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 2px solid #d72638;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #d72638;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #a51b2a;
+}
+
+.modal-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d72638, transparent);
+  margin: 1.5rem 0;
+}
+
+.modal-section {
+  margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+  color: #d72638;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.modal-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-section li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.modal-section li:before {
+  content: "•";
+  color: #d72638;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+#modal-obs li {
+  color: #ccc;
+  font-style: italic;
+  border-bottom: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .relatorio-container {
+    padding: 1rem;
+  }
+  
+  .relatorio-header h1 {
+    font-size: 2rem;
+  }
+  
+  .table-container {
+    padding: 1rem;
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    padding: 1.5rem;
+  }
+  
+  th, td {
+    padding: 0.75rem 0.5rem;
+  }
+}

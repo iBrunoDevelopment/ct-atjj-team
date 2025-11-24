@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - CT ATJJ TEAM</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/contato.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  
+  <!-- Para Android -->
+  <link rel="manifest" href="assets/img/site.webmanifest">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="contact-hero">
+    <div class="top-bar">
+      <div class="logo-txt">ATJJ</div>
+      <div class="background-logo">
+        <img src="assets/img/logo-atjj.png" alt="Logo ATJJ Team">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="aulas.html">Aulas</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+          <li><a href="relatorio.html">Relatórios</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero-content">
+      <h1>ENTRE EM CONTATO</h1>
+      <p>Estamos aqui para responder suas dúvidas e agendar sua aula experimental</p>
+    </div>
+  </header>
+
+  <!-- INFORMAÇÕES DE CONTATO -->
+  <section class="contact-info">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p class="section-subtitle">Entre em contato através dos nossos canais de comunicação</p>
+      
+      <div class="contact-info-grid">
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <h3>Endereço</h3>
+          <p>Rua do Jiu-Jitsu, 123<br>Bairro Tradição<br>São Paulo - SP<br>CEP: 01234-567</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📞</span>
+          <h3>Telefone</h3>
+          <p>(82) 99345-3783<br>WhatsApp disponível</p>
+          <a href="tel:+5582993453783" class="btn" style="margin-top: 1rem;">Ligar Agora</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <h3>E-mail</h3>
+          <p>teamatjj@gmail.com</p>
+          <a href="mailto:teamatjj@gmail.com" class="btn secondary" style="margin-top: 1rem;">Enviar E-mail</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">🕒</span>
+          <h3>Horário de Funcionamento</h3>
+          <p>Segunda a Sexta: 8h às 22h<br>Sábado: 8h às 12h<br>Domingo: Fechado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE CONTATO -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="form-container">
+        <h2>Envie sua Mensagem</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="aula-experimental">Aula Experimental</option>
+                <option value="matricula">Matrícula</option>
+                <option value="duvidas">Dúvidas</option>
+                <option value="valores">Valores e Planos</option>
+                <option value="eventos">Eventos</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Conte-nos como podemos ajudá-lo..." required></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter" checked>
+              <span class="checkmark"></span>
+              Desejo receber novidades e informações sobre eventos por e-mail
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="map-section">
+    <div class="container">
+      <h2>Onde Estamos</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <div class="map-overlay">
+            <h3>📍 CT ATJJ TEAM</h3>
+            <p>Rua do Jiu-Jitsu, 123 - São Paulo/SP</p>
+            <p>Facilidade de acesso com transporte público</p>
+            <p>Estacionamento disponível</p>
+            <a href="https://maps.google.com" target="_blank" class="btn" style="margin-top: 1rem;">Ver no Google Maps</a>
+          </div>
+          <!-- Em produção, substituir por iframe do Google Maps -->
+          <div style="width: 100%; height: 100%; background: #333; display: flex; align-items: center; justify-content: center; color: #ccc;">
+            <div style="text-align: center;">
+              <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
+              <p>Mapa interativo do Google Maps</p>
+              <p style="font-size: 0.8rem; margin-top: 0.5rem;">(Em produção será substituído pelo mapa real)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERGUNTAS FREQUENTES -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Perguntas Frequentes</h2>
+      <p class="section-subtitle">Encontre respostas para as dúvidas mais comuns</p>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Preciso ter experiência para começar?</h3>
+          <p>Não! Temos turmas específicas para iniciantes onde você aprenderá desde os fundamentos básicos em um ambiente acolhedor e seguro.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Qual a idade mínima para praticar?</h3>
+          <p>Aceitamos crianças a partir de 4 anos em nossa turma infantil com metodologia adaptada e lúdica para o desenvolvimento infantil.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Preciso comprar kimono para a primeira aula?</h3>
+          <p>Não. Para a aula experimental, roupas confortáveis (moletom e camiseta) são suficientes. Temos kimonos disponíveis para aluguel.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Como funciona a aula experimental?</h3>
+          <p>É gratuita e sem compromisso. Você participa de uma aula real para conhecer nossa metodologia, instrutores e instalações.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Há restrições para pessoas com lesões?</h3>
+          <p>Recomendamos consultar um médico. Adaptamos os treinos conforme as limitações de cada aluno, sempre priorizando a segurança.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Qual o valor das mensalidades?</h3>
+          <p>Temos planos flexíveis para diferentes necessidades. Entre em contato para conhecer todas as opções disponíveis e condições especiais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMADA FINAL -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Pronto para Começar sua Jornada no Jiu-Jitsu?</h2>
+        <p>Agende sua aula experimental gratuita e venha fazer parte da família ATJJ TEAM</p>
+        <div class="cta-buttons">
+          <a href="tel:+551199999999" class="btn">📞 Ligar Agora</a>
+          <a href="https://wa.me/551199999999" class="btn secondary" target="_blank">💬 WhatsApp</a>
+          <a href="aulas.html" class="btn">🥋 Conhecer Aulas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="newsletter">
+          <h3>Receba nossas novidades</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Inscrever-se</button>
+          </form>
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2025 CT ATJJ TEAM. Todos os direitos reservados.</p>
+          <p>Excelência técnica, ética e formação de valores</p>
+          <div class="social-links" style="margin-top: 1rem;">
+            <a href="#" style="color: #ccc; margin-right: 1rem;">📘 Facebook</a>
+            <a href="#" style="color: #ccc; margin-right: 1rem;">📷 Instagram</a>
+            <a href="#" style="color: #ccc;">🎥 YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Validação simples do formulário
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Validação básica
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const assunto = document.getElementById('assunto').value;
+      const mensagem = document.getElementById('mensagem').value;
+      
+      if (!nome || !email || !assunto || !mensagem) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+      
+      // Simulação de envio
+      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+</body>
+</html>

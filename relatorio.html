@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório Técnico-Pedagógico - Turma Kids</title>
+  <link rel="stylesheet" href="assets/css/relatorio2.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  
+  <!-- Para Android -->
+  <link rel="manifest" href="assets/img/site.webmanifest">
+</head>
+<body>
+  <div class="relatorio-container">
+    <header class="relatorio-header">
+      <h1>Relatório Técnico-Pedagógico - Turma Kids</h1>
+      <a href="index.html" class="home-btn">Voltar para Site</a>
+    </header>
+
+    <main class="relatorio-main">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="aluno-tabela">
+            <!-- Populado via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <h2 id="modal-nome"></h2>
+        <hr class="modal-divider">
+        
+        <div class="modal-section">
+          <h3>Pontos Fortes</h3>
+          <ul id="modal-fortes"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Pontos a Melhorar</h3>
+          <ul id="modal-fracos"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Recomendações</h3>
+          <ul id="modal-recomendacoes"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Observações</h3>
+          <ul id="modal-obs"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/relatorio.js"></script>
+</body>
+</html>
